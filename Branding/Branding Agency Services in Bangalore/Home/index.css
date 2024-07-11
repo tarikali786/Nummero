@@ -489,7 +489,9 @@ h3 {
   grid-template-columns: repeat(2, 1fr);
   gap: 4rem;
 }
-
+.service-section2 {
+  margin-block: 5rem;
+}
 .service-card {
   border: 1px solid #ffffff2b;
   padding: 0.8rem;
@@ -497,7 +499,29 @@ h3 {
   border-radius: 21px;
   text-align: left !important;
 }
+.service-card2 {
+  border: 1px solid #ffffff2b;
+  padding: 0.8rem;
+  box-shadow: 2px 2px 6px #0000001a;
+  border-radius: 21px;
+  text-align: left !important;
+  width: 70%;
+}
+.service-card2:nth-child(even) {
+  border: 1px solid #ffffff2b;
+  padding: 0.8rem;
+  box-shadow: 2px 2px 6px #0000001a;
+  border-radius: 21px;
+  text-align: left !important;
+  width: 70%;
+  margin-left: 30%;
+}
 .service-card:hover {
+  border-color: #fcb347;
+  box-shadow: 0 0 60px 0 rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+}
+.service-card2:hover {
   border-color: #29a9e0;
   box-shadow: 0 0 60px 0 rgba(255, 255, 255, 0.1);
   cursor: pointer;
@@ -516,9 +540,9 @@ h3 {
 }
 
 .service-card > div {
-  border: 1px solid #ffffff2b;
+  border: 1px solid #29a9e0;
   padding: 1.4em 2em;
-  box-shadow: 2px 2px 6px #0000001a;
+  box-shadow: 2px 2px 6px #29a9e0;
   border-radius: 21px;
   --background-overlay: "";
   background-color: transparent;
@@ -532,7 +556,15 @@ h3 {
   height: 100%;
   text-align: left !important;
 }
-
+.service-card2 > div {
+  border: 1px solid #fcb347;
+  padding: 1.4em 2em;
+  box-shadow: 2px 2px 6px #fcb347;
+  border-radius: 21px;
+  --background-overlay: "";
+  height: 100%;
+  text-align: left !important;
+}
 /* Faq Container */
 .faq {
   padding: 2rem 15%;
@@ -608,7 +640,9 @@ h3 {
 .faq input[type="checkbox"]:checked + label {
   display: block;
   color: #4f7351;
-  min-height: 140px;
+  min-height: 260px;
+  max-height: 400px;
+
   transition: height 0.8s;
   -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
@@ -705,13 +739,21 @@ h3 {
     padding: 2rem;
     margin-block: 6rem 4rem;
   }
+  .service-card2 {
+    text-align: left !important;
+    width: 100%;
+  }
+  .service-card2:nth-child(even) {
+    width: 80%;
+    margin-left: 0%;
+  }
 }
 
 .InnerIcon {
   width: 60px;
   height: 60px;
   margin-bottom: 1rem;
-  background-color: #14122e;
+  border-radius: 8px;
 }
 .InnerIcon > img {
   width: 100%;

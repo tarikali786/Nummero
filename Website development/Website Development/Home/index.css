@@ -608,7 +608,9 @@ h3 {
 .faq input[type="checkbox"]:checked + label {
   display: block;
   color: #4f7351;
-  min-height: 140px;
+  min-height: 260px;
+  max-height: 400px;
+
   transition: height 0.8s;
   -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
@@ -730,5 +732,4 @@ h3 {
   height: 100%;
   object-fit: cover;
   border-radius: 8px;
-
 }
