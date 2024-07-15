@@ -676,14 +676,15 @@ h3 {
 }
 
 .other-services-card {
-  background-color: #29a9e0;
-  border-radius: 30px;
+  border-bottom: 1px solid #29a9e0;
+  /* background-color: #29a9e0; */
+  /* border-radius: 30px; */
   padding: 1rem;
   display: flex;
   justify-content: center;
   transition: scale 0.4s linear;
   cursor: pointer;
-  box-shadow: 0px 2px 4px #fff;
+  /* box-shadow: 0px 2px 4px #fff; */
 }
 .other-services-card > a {
   text-align: center;
@@ -695,7 +696,6 @@ h3 {
   color: #fff;
 }
 .other-services-card:hover {
-  border: 2px solid #fff;
   scale: 1.1;
 }
 
@@ -773,9 +773,6 @@ h3 {
   border-radius: 8px;
 }
 
-
-
-
 @media (max-width: 767px) {
   .elementor-element-fc4283c > img {
     height: 0px !important;
@@ -789,4 +786,31 @@ h3 {
     object-fit: cover;
     object-position: center !important;
   }
+}
+
+.accordion {
+  padding: 0 15% !important;
+}
+.accordion-item {
+  background-color: transparent !important;
+  border-bottom: 1px solid #fff !important;
+  padding-bottom: 1rem !important;
+}
+
+.faqQuestion {
+  font-size: 24px !important;
+  margin-top: 0.6rem !important;
+  font-weight: 500 !important;
+}
+.accordion-header {
+  cursor: pointer !important;
+}
+
+.accordion-body {
+  font-size: 20px !important;
+}
+.accordion > h1 {
+  text-align: center;
+  color: #29a9e0 !important;
+  margin-bottom: 2rem;
 }
